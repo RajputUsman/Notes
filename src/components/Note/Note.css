@@ -1,0 +1,41 @@
+.note {
+    background-color: #feff9c;
+    text-decoration: none;
+    color: #000;
+    margin: 1em;
+    transition: all ease 0.3s;
+    padding: 1em;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-6deg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.note:nth-child(even){
+transform: rotate(4deg);
+position: relative;
+top: 5px;
+background-color: #7afcff;
+}
+
+.note:nth-child(3n){
+    transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+    background-color: #ff7eb9;
+    }
+
+.note__text{
+    flex:1;
+}
+
+.note:hover{
+    transform: scale(1.5);
+    z-index: 5;
+}
+
+.note__link{
+display: none;
+}
