@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/RajaGProjects/notes/static/css/main.b1209211.chunk.css",
-    "main.js": "/RajaGProjects/notes/static/js/main.f17e5b82.chunk.js",
-    "main.js.map": "/RajaGProjects/notes/static/js/main.f17e5b82.chunk.js.map",
+    "main.css": "/RajaGProjects/notes/static/css/main.094bb42f.chunk.css",
+    "main.js": "/RajaGProjects/notes/static/js/main.062d6dd8.chunk.js",
+    "main.js.map": "/RajaGProjects/notes/static/js/main.062d6dd8.chunk.js.map",
     "runtime-main.js": "/RajaGProjects/notes/static/js/runtime-main.68fcc7d2.js",
     "runtime-main.js.map": "/RajaGProjects/notes/static/js/runtime-main.68fcc7d2.js.map",
     "static/js/2.18e63490.chunk.js": "/RajaGProjects/notes/static/js/2.18e63490.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.6e20b26f.chunk.js": "/RajaGProjects/notes/static/js/3.6e20b26f.chunk.js",
     "static/js/3.6e20b26f.chunk.js.map": "/RajaGProjects/notes/static/js/3.6e20b26f.chunk.js.map",
     "index.html": "/RajaGProjects/notes/index.html",
-    "static/css/main.b1209211.chunk.css.map": "/RajaGProjects/notes/static/css/main.b1209211.chunk.css.map",
+    "static/css/main.094bb42f.chunk.css.map": "/RajaGProjects/notes/static/css/main.094bb42f.chunk.css.map",
     "static/js/2.18e63490.chunk.js.LICENSE.txt": "/RajaGProjects/notes/static/js/2.18e63490.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.68fcc7d2.js",
     "static/js/2.18e63490.chunk.js",
-    "static/css/main.b1209211.chunk.css",
-    "static/js/main.f17e5b82.chunk.js"
+    "static/css/main.094bb42f.chunk.css",
+    "static/js/main.062d6dd8.chunk.js"
   ]
 }
