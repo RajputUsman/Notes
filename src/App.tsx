@@ -64,7 +64,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>Notes Application</div>
+      <div className="t1-main">Notes Application</div>
       <div></div>
       <div className="notes-list">
         {notesList.map((noteItem, index) => {
