@@ -4,15 +4,15 @@
   color: #000;
   margin: 1em;
   transition: all ease 0.3s;
-  padding: 1em;
   height: 10em;
   width: 10em;
   display: flex;
 
   flex-direction: column;
   transform: rotate(-6deg);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 
 .note:nth-child(even) {
@@ -30,21 +30,84 @@
 }
 *:focus {
   outline: 0;
-  /* border: 2px solid; */
-
-  /* border-color: #f1c17d; */
-  /* border-radius: 0.5em; */
 }
 .note__text {
   flex: 1;
+  padding-right: 0.5em;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 9px;
+  overflow: auto;
 }
 
-.note:hover {
+.note__text::-webkit-scrollbar {
+  width: 4px;
+}
+.note__text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.note__text::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 6px grey;
+}
+
+.note:hover,
+.note.note--focused {
   transform: scale(1.5);
   z-index: 5;
   border-radius: 1em;
 }
+.note__tools {
+  text-align: left;
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  font-size: 13px;
+}
+.note__tools a,
+.note__tools a:hover {
+  color: blue;
+}
 
-.note__link {
-  display: none;
+.note__tools a {
+  opacity: 0.6;
+}
+.note__tools a:hover {
+  opacity: 1;
+}
+
+.note__tools button {
+  border: transparent;
+  background-color: transparent;
+  opacity: 0.6;
+  color: blue;
+}
+.note__tools button:hover {
+  opacity: 1;
+}
+/* Wrote this one by myself it worked fine  */
+/* .note:focus-within {
+  transform: scale(1.5);
+  z-index: 7;
+  border-radius: 1em;
+} */
+
+.note .btn-close {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  width: 3px;
+  height: 9px;
+}
+
+.note__pin {
+  color: #b05b3b;
+  border: transparent;
+  align-self: center;
+  background-color: transparent;
+}
+.note__pin:active,
+.note__pin.note__pinned {
+  color: #6a492b;
 }

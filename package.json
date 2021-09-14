@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -11,14 +14,17 @@
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
     "axios": "^0.21.1",
+    "bootstrap": "^5.1.0",
+    "dotenv": "^10.0.0",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.5",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://rajputusman.github.io/Notes/",
+  "homepage": "https://rajagprojects.github.io/notes-frontend/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

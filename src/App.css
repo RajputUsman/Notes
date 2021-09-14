@@ -1,21 +1,137 @@
 .App {
   text-align: center;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
-  margin-top: 30px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .notes-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 15px;
+  padding-bottom: 4em;
 }
 
 .t1-main {
   font-size: 20px;
   font-weight: bolder;
-  margin-bottom: 5em;
+  padding-bottom: 1em;
+  margin-bottom: 3em;
+  border-bottom: 2px solid #6a4919;
+  color: #6a4919;
+  margin-top: 1em;
+}
+.note__logo {
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+  background-color: #f1c103;
+  cursor: pointer;
+  display: none;
+  width: 210px;
+  height: 80px;
+  border-radius: 12px;
+}
+.note__logo img {
+  position: relative;
+  top: -50px;
+  width: 210px;
+  height: 206px;
+}
+
+.modal-content {
+  background-color: #d7974c !important;
+  border-radius: 1rem !important;
+  border-color: #865439;
+}
+.modal-header {
+  border-bottom: 1px solid #5c3d2e !important;
+}
+.modal-footer {
+  border-top: 1px solid #5c3d2e !important;
+}
+.modal {
+  top: 20% !important;
+}
+.btn-primary,
+.btn-primary:hover {
+  background-color: #b85c38 !important;
+  border: transparent !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  background-color: #000 !important;
+  border: transparent !important;
+}
+
+.mb-3 {
+  margin-top: 0.2em;
+}
+
+.App .add-button {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  border-radius: 50%;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  padding: 0;
+}
+.App .add-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.App .add-button:active {
+  box-shadow: 0 0 0 0.25rem rgb(66 70 73 / 50%);
+  outline: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .App .add-button {
+    bottom: 30px;
+    right: 25px;
+  }
+  .t1-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 15px;
+    border-bottom: none;
+  }
+  .note__logo {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .App .add-button {
+    bottom: 30px;
+    right: 25px;
+  }
+  .t1-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 18px;
+    border-bottom: none;
+  }
+  .note__logo {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .note__logo {
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
