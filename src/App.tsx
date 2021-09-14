@@ -1,6 +1,5 @@
 import "./App.css";
 import { useEffect, useState } from "react";
-import Logo from "./assets/RajaG.gif";
 import {
   deleteNote,
   createNote,
@@ -291,9 +290,6 @@ function App() {
             />
           );
         })}
-      </div>
-      <div className="note__logo">
-        <img src={Logo} alt="" />
       </div>
     </div>
   );
